@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>To-Do List App | WebPage</title>
+</head>
+
+<body>
+    <header class="bg-blue white">
+        <h2 class="heading">📌 To-Do List App 📝</h2>
+    </header>
+    <main class="container">
+        <h2>My ToDo's</h2>
+        <section class="taskArea">
+            <p id="empty">Nothing to show here.. Click (+) to add new tasks..</p>
+        </section>
+
+        <!-- Pop-up -->
+        <div class="pop-up" id="pop-up">
+            <div class="add ">
+                <p>What do you want to do?</p>
+                <input type="text" name="task" id="task" placeholder="Add new task..">
+                <br>
+                <button type="button" class="bg-blue white" id="submit">Add</button>
+                <button type="button" class="bg-blue white" id="close">Close</button>
+            </div>
+        </div>
+    </main>
+    <button type="button" id="deleteAll" class="white">Clear All</button>
+    <button type="button" class="material-symbols-outlined bg-blue white" id="addBtn">add</button>
+    <script src="script.js"></script>
+</body>
+</html>
