@@ -38,7 +38,7 @@ function loadTasksFromLocalStorage() {
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.length <= 0) {
         hideElement.style.display = "block";
-    } else if (localStorage.getItem("tasks").length <= 0) {
+    } else if (localStorage.getItem("tasks").length <= "0") {
         hideElement.style.display = "block";
     } else {
         loadTasksFromLocalStorage();
